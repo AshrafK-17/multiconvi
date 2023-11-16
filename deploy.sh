@@ -15,7 +15,8 @@ IMGNAME="ut-convertimage"
 # main routine
 {
 
-  VERSION="$(git describe --tags)"
+  #VERSION="$(git describe --tags)"\
+  VERSION="1.0"
 
   echo "Starting ut-convertimage docker container, using Image: $IMGNAME:$VERSION"
   docker run \

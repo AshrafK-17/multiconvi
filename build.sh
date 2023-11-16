@@ -8,7 +8,7 @@ IMAGE_NAME="ut-convertimage"
 VERSION="1.0"
 
 # Include contents of Utils.sh (which contains reusable functions)
-[ -f ../utils.sh ] && . ../utils.sh
+[ -f ./utils.sh ] && . ./utils.sh
 
 
 build() {
@@ -55,7 +55,8 @@ build() {
     esac
   done
 
-  VERSION="$(git describe --tags)"
+  #VERSION="$(git describe --tags)"
+  VERSION="1.0"
 
   IMAGE_FULLNAME=$IMAGE_NAME:$VERSION
 
